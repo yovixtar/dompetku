@@ -1,3 +1,4 @@
+import 'package:dompetku_app/util/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -15,11 +16,16 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Dompetku"),
-        backgroundColor: Colors.blue,
+        backgroundColor: COLOR_PRIMARY,
       ),
       body: Container(
         child: Column(children: [
-          Text("Ini Home"),
+          Text(
+            "Ini Home",
+            style: TextStyle(
+              color: COLOR_TEXT,
+            ),
+          ),
           Text("Ini Home"),
         ]),
       ),
